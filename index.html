@@ -12,22 +12,36 @@
             background-color: #f2f2f2;
         }
         .container {
-            display: flex;
+             max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .column {
-            width: 50%;
-            padding: 20px;
-            box-sizing: border-box; /* Include padding in width calculation */
-        }
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
         .profile h1 {
             margin: 0;
             color: #333;
         }
         .profile img {
-            max-width: 100%; /* Ensure image doesn't exceed its container width */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 50%; /* Make the image round */
-        }.profile h1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .profile h1 {
             margin: 0;
             color: #333;
         }
@@ -52,17 +66,20 @@
         }
     </style>
 </head>
+    
 <body>
 
 <div class="container">
+  <div class="row">
     <div class="column">
         <img src="photo - 3.jpg" alt="Profile Picture">
     </div>
     <div class="column">
         <h1>Purna Dutta</h1>
-        <p>Hi, I am a BS-MS student in Mathematics and Computer Science at IISER Berhampur. I pursued my MS thesis project in theoretical computer science under the guidance of Prof. Saket Saurabh at IMSc, Chennai.</p>
+        <p>Hi, I am a BS-MS student in Mathematics and Computer Science at IISER Berhampur. I pursued my MS thesis project in theoretical computer science under the guidance of Prof. Saket Saurabh at IMSc, Chennai.
+</p>
     </div>
-</div>
+    </div>
     
     <div class="contact">
         <h2>Contact</h2>
@@ -72,6 +89,9 @@
         </ul>
     </div>
 </div>
+
+</div>
+
 
 </body>
 </html>
