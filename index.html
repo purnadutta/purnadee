@@ -12,38 +12,24 @@
             background-color: #f2f2f2;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
         }
-        .profile {
-            text-align: center;
-            margin-bottom: 20px;
+        .column {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in width calculation */
         }
         .profile img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-        .profile h1 {
+            max-width: 100%; /* Ensure image doesn't exceed its container width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make the image round */
+        }.profile h1 {
             margin: 0;
             color: #333;
         }
         .description {
             margin-bottom: 20px;
             color: #666;
-        }
-        .positions {
-            margin-bottom: 20px;
-        }
-        .positions h2 {
-            margin-top: 0;
-            color: #333;
         }
         .contact {
             margin-bottom: 20px;
@@ -65,19 +51,12 @@
 <body>
 
 <div class="container">
-    <div class="profile">
-        .container {
-            display: flex;
-        }
-        .column {
-            width: 50%;
-            <img src="photo - 3.jpg" alt="Profile Picture">
-        }
-        .column {
-            width: 50%;
-            <h1>Purna Dutta</h1>
-            <p>Hi, I am a BS-MS student in Mathematics and Computer Science at IISER Berhampur. I pursued my MS thesis project in theoretical computer science under the guidance of Prof. Saket Saurabh at IMSc, Chennai.
-        }
+    <div class="column">
+        <img src="photo - 3.jpg" alt="Profile Picture">
+    </div>
+    <div class="column">
+        <h1>Purna Dutta</h1>
+        <p>Hi, I am a BS-MS student in Mathematics and Computer Science at IISER Berhampur. I pursued my MS thesis project in theoretical computer science under the guidance of Prof. Saket Saurabh at IMSc, Chennai.</p>
     </div>
 </div>
     
