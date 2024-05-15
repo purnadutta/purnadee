@@ -12,7 +12,7 @@
             background-color: #f2f2f2;
         }
         .container {
-             max-width: 800px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
@@ -20,16 +20,17 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .column {
-  float: left;
-  width: 50%;
-}
+            float: left;
+            width: 50%;
+        }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        /* Clear floats after the columns */
+        .container:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
         .profile h1 {
             margin: 0;
             color: #333;
@@ -39,10 +40,6 @@
             height: 50px;
             object-fit: scale-down;
             border-radius: 50%;
-        }
-        .profile h1 {
-            margin: 0;
-            color: #333;
         }
         .description {
             margin-bottom: 20px;
@@ -69,15 +66,13 @@
 <body>
 
 <div class="container">
-  <div class="row">
     <div class="column">
         <img src="photo4.jpg" alt="Profile Picture">
     </div>
     <div class="column">
         <h1>Purna Dutta</h1>
-        <p>Hi, I am a BS-MS student in Mathematics and Computer Science at <a href = "https://www.iiserbpr.ac.in/">IISER Berhampur</a>. I pursued my MS thesis project in theoretical computer science under the guidance of <a href = "https://sites.google.com/view/sakethome">Prof. Saket Saurabh</a> at <a href = "https://www.imsc.res.in/">IMSc, Chennai</a>.
-</p>
-    </div>
+        <p>Hi, I am a BS-MS student in Mathematics and Computer Science at <a href="https://www.iiserbpr.ac.in/">IISER Berhampur</a>. I pursued my MS thesis project in theoretical computer science under the guidance of <a href="https://sites.google.com/view/sakethome">Prof. Saket Saurabh</a> at <a href="https://www.imsc.res.in/">IMSc, Chennai</a>.
+        </p>
     </div>
     
     <div class="contact">
