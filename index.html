@@ -1,9 +1,92 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .profile h1 {
+            margin: 0;
+            color: #333;
+        }
+        .description {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .positions {
+            margin-bottom: 20px;
+        }
+        .positions h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .contact {
+            margin-bottom: 20px;
+        }
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact li {
+            margin-bottom: 5px;
+        }
+        .contact li a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
 <body>
-  <h1>PURNA DUTTA</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
 
+<div class="container">
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h1>John Doe</h1>
+        <p class="description">Frontend Developer</p>
+    </div>
+
+    <div class="positions">
+        <h2>Positions Held Before</h2>
+        <ul>
+            <li>Software Engineer at ABC Company (2018-2020)</li>
+            <li>Web Developer at XYZ Corporation (2016-2018)</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a href="mailto:john@example.com">john@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/johndoe">John Doe</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
 </html>
