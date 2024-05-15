@@ -18,25 +18,21 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap; /* Allow columns to wrap */
         }
         .column {
-            float: left;
             width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
         }
-
-        /* Clear floats after the columns */
-        .container:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
         .profile h1 {
             margin: 0;
             color: #333;
         }
         .profile img {
-            max-width: 100%; /* Ensure image fits within container */
+            max-width: 100%;
+            height: auto;
             border-radius: 50%;
         }
         .description {
@@ -45,6 +41,10 @@
         }
         .contact {
             margin-bottom: 20px;
+            width: 100%; /* Make contact section full width */
+        }
+        .contact h2 {
+            margin-top: 0; /* Remove default margin */
         }
         .contact ul {
             list-style: none;
@@ -81,9 +81,6 @@
         </ul>
     </div>
 </div>
-
-</div>
-
 
 </body>
 </html>
