@@ -19,32 +19,37 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
-            flex-wrap: wrap; /* Allow columns to wrap */
+            flex-wrap: wrap;
+            align-items: center; /* Center items vertically */
         }
-        .column {
-            width: 50%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .profile h1 {
-            margin: 0;
-            color: #333;
+        .profile {
+            flex: 0 0 200px; /* Set fixed width for the profile column */
+            padding-right: 20px; /* Add spacing between profile and content */
         }
         .profile img {
             max-width: 100%;
             height: auto;
             border-radius: 50%;
+            display: block; /* Ensure proper alignment */
         }
-        .description {
-            margin-bottom: 20px;
+        .content {
+            flex: 1; /* Let content column take remaining space */
+        }
+        .content h1 {
+            margin: 0;
+            color: #333;
+        }
+        .content p {
+            margin-top: 0; /* Remove default margin */
             color: #666;
         }
         .contact {
-            margin-bottom: 20px;
             width: 100%; /* Make contact section full width */
+            margin-top: 20px; /* Add space between content and contact */
         }
         .contact h2 {
             margin-top: 0; /* Remove default margin */
+            color: #333;
         }
         .contact ul {
             list-style: none;
@@ -64,15 +69,14 @@
 <body>
 
 <div class="container">
-    <div class="column">
+    <div class="profile">
         <img src="photo4.jpg" alt="Profile Picture">
     </div>
-    <div class="column">
+    <div class="content">
         <h1>Purna Dutta</h1>
         <p>Hi, I am a BS-MS student in Mathematics and Computer Science at <a href="https://www.iiserbpr.ac.in/">IISER Berhampur</a>. I pursued my MS thesis project in theoretical computer science under the guidance of <a href="https://sites.google.com/view/sakethome">Prof. Saket Saurabh</a> at <a href="https://www.imsc.res.in/">IMSc, Chennai</a>.
         </p>
     </div>
-    
     <div class="contact">
         <h2>Contact</h2>
         <ul>
