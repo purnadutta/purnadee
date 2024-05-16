@@ -1,33 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400;1,458&family=Rajdhani:wght@300;400;500;600;700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400;1,458&family=Rajdhani:wght@300;400;500;600;700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purna Dutta</title>
     <style>
         body {
             font-family: "Rajdhani";
             font-weight: 500;
-            margin: 0;
-            padding: 0;
             background-color: #f2f2f2;
             line-height: 1.5;
+            color: #666;
         }
         h1 {
             font-family: "Radio Canada Big";
             font-weight: 570;
+            color: black;
+        }
+        nav a {
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            margin-left: 20px;
+        }
+        nav a:hover {
+            color: #999;
         }
         .container {
+            position: relative;
             max-width: 700px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container header {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .container img {
+            max-width: 150px;
+            max-height: auto;
+            border-radius: 50%;
         }
         a {
           color: inherit; /* Inherit text color */
@@ -42,11 +63,20 @@
         a:visited {
           color: grey; /* Change color of visited links */
         }
-      </style>
-    
-  </head>
-  <body>
+    </style>
+</head>
+<body>
     <div class="container">
+        <header>
+            <h1>Purna Dutta</h1>
+            <nav>
+                <a href="index.html" target="_self">Home</a>
+                <a href="misc.html" target="_blank">Misc.</a>
+            </nav>
+        </header>
+        <hr>
+        
+  <!------------------------------------------------------------------------------------------>
       <h2>Graduate Application</h2>
       
       <p>Applicant support programs for CS PhD:</p>
