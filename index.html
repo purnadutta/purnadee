@@ -87,10 +87,36 @@
         a:visited {
           color: grey; /* Change color of visited links */
         }
+    nav {
+            position: absolute; /* Position the navigation links relative to the container */
+            top: 30px; /* Align the top edge of the navigation links with the top edge of the container */
+            right: 0; /* Align the right edge of the navigation links with the right edge of the container */
+        }
+        
+        nav a {
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Make the font bold */
+    transition: color 0.3s ease; /* Add smooth transition effect on hover */
+}
+
+nav a:hover {
+    color: #999; /* Change color on hover */
+}
     </style>
 </head>
     
 <body>
+
+
+<div class="container">
+  
+  <nav>
+        <a href="index.html" target="_self">Home</a>
+        <a href="misc.html" target="_blank">Misc.</a>
+    </nav>
 
 <div class="container">
     <div class="profile">
