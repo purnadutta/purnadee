@@ -1,0 +1,60 @@
+body {
+            font-family: "Rajdhani";
+            font-weight: 500;
+            background-color: #f2f2f2;
+            line-height: 1.5;
+            color: #666;
+        }
+        h1 {
+            font-family: "Radio Canada Big";
+            font-weight: 570;
+            color: black;
+        }
+        nav a {
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            margin-left: 20px;
+        }
+        nav a:hover {
+            color: #999;
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .container img {
+            max-width: 150px;
+            max-height: auto;
+            border-radius: 50%;
+        }
+        a {
+          color: inherit; /* Inherit text color */
+        }
+      
+        /* Styling unvisited links */
+        a:link {
+          color: grey; /* Change color of unvisited links */
+        }
+      
+        /* Styling visited links */
+        a:visited {
+          color: grey; /* Change color of visited links */
+        }
+
+        a:hover{
+          color: #999;
+        }
+
