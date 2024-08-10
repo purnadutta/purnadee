@@ -40,6 +40,12 @@ body {
             max-height: auto;
             border-radius: 50%;
         }
+            #profile-pic {
+                float: left;
+                margin-right: 40px;
+                text-align: center;
+            }
+             
         a {
           color: inherit; /* Inherit text color */
         }
