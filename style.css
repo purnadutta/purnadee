@@ -38,11 +38,11 @@ body {
         .container img {
             max-width: 200px;
             max-height: auto;
-            border-radius: 25%;
+            border-radius: 50%;
         }
             #profile-pic {
                 float: left;
-                margin-right: 5px;
+                margin-right: 10px;
                 text-align: center;
             }
              
