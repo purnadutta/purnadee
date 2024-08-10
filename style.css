@@ -36,14 +36,13 @@ body {
             margin-bottom: 10px;
         }
         .container img {
-            max-width: 300px;
+            max-width: 200px;
             max-height: auto;
-/*             border-radius: 20%; */
         }
             #profile-pic {
                 float: left;
 /*                 margin-right: 5px; */
-/*                 text-align: center; */
+                text-align: center;
             }
              
         a {
